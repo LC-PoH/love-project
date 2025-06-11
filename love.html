@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Quiz for My Queen 💖</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>💌 How Well Do You Know Me? 💌</h1>
+  <div id="quiz">
+    <div class="question" id="q1">
+      1. What’s my favorite color?<br>
+      <button onclick="checkAnswer(1, 'a')">Blue</button>
+      <button onclick="checkAnswer(1, 'b')">Black</button>
+      <button onclick="checkAnswer(1, 'c')">Red</button>
+    </div>
+    <div class="question hidden" id="q2">
+      2. Where did we first hang out?<br>
+      <button onclick="checkAnswer(2, 'a')">At the mall</button>
+      <button onclick="checkAnswer(2, 'b')">At school</button>
+      <button onclick="checkAnswer(2, 'c')">At the park</button>
+    </div>
+    <div class="question hidden" id="q3">
+      3. What’s my favorite thing about you?<br>
+      <button onclick="checkAnswer(3, 'a')">Your smile 😊</button>
+      <button onclick="checkAnswer(3, 'b')">Your heart ❤️</button>
+      <button onclick="checkAnswer(3, 'c')">Everything 😍</button>
+    </div>
+  </div>
+
+  <div id="result" class="result hidden"></div>
+
+  <div id="bonus" class="bonus-question hidden">
+    💖 Just one last thing...<br><br>
+    Do you love me? 😚<br><br>
+    <button onclick="bonusAnswer(true)">Yes, of course!</button>
+    <button onclick="bonusAnswer(false)">Maybe... 😏</button>
+  </div>
+
+  <div id="final" class="result hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
